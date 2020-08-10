@@ -19,7 +19,7 @@ namespace ProjetoEstoqueDTI.Controllers
         public ProdutosController(IProdutoRepository repositoryProduto)
         {
             _repo = repositoryProduto;
-        }
+        } 
 
         // GET: api/Produtos
         [HttpGet]
