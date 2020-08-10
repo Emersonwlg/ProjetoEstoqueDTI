@@ -15,7 +15,7 @@ namespace ProjetoEstoqueDTI.Controllers
     public class ProdutosController : Controller
     {
         private readonly IProdutoRepository _repo;
-
+ 
         public ProdutosController(IProdutoRepository repositoryProduto)
         {
             _repo = repositoryProduto;
