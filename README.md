@@ -5,4 +5,4 @@ Projeto controle de estoque
 
 Script de criação da tabela "Produto" se encontra na pasta => ScriptBanco
 
-Documento de decisões se encontra na pasta => DocumentoS
+Documento de decisões se encontra na pasta => Documentos
