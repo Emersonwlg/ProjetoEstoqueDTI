@@ -24,7 +24,7 @@ export class ProdutoFormComponent implements OnInit {
        quantidade: '',
        valorunitario: ''
      });
-
+ 
     this.activatedRoute.params.subscribe(params=> {
         if(params["id"] == undefined ) {
           return;
