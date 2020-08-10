@@ -1,0 +1,59 @@
+<h1>{{modoEdicao? "Editar": "Incluir"}} Produtos</h1>
+<form class="form-horizontal" novalidate
+      (ngSubmit)="save()" [formGroup]="formGroup">
+  <fieldset>
+
+    <div class="form-group"
+         [ngClass]="{'has-error': (formGroup.get('nome').touched || formGroup.get('nome').dirty) 
+         && !formGroup.get('nome').valid }">
+      <label class="col-md-2 control-label" for="nome">Nome</label>
+
+      <div class="col-md-8">
+        <input class="form-control" id="nome" type="text" required formControlName="nome" />
+        <span class="help-block" *ngIf="(formGroup.get('nome').touched || formGroup.get('nome').dirty) 
+        && formGroup.get('nome').errors">
+          <span *ngIf="formGroup.get('nome').errors.required">
+            O campo nome é obrigatório
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <div class="form-group"
+         [ngClass]="{'has-error': (formGroup.get('quantidade').touched || formGroup.get('quantidade').dirty) 
+         && !formGroup.get('quantidade').valid }">
+      <label class="col-md-2 control-label" for="quantidade">Quantidade</label>
+
+      <div class="col-md-8">
+        <input class="form-control" id="quantiade" type="text" required formControlName="quantidade" onkeypress="return event.charCode >= 48 && event.charCode <= 57"/>
+        <span class="help-block" *ngIf="(formGroup.get('quantidade').touched || formGroup.get('quantidade').dirty) 
+        && formGroup.get('quantidade').errors">
+          <span *ngIf="formGroup.get('quantidade').errors.required">O campo quantidade é obrigatório</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="form-group"
+         [ngClass]="{'has-error': (formGroup.get('valorunitario').touched 
+         || formGroup.get('valorunitario').dirty) && !formGroup.get('valorunitario').valid }">
+         <label class="col-md-2 control-label" for="valorunitario">Valor Unitário</label>
+
+      <div class="col-md-8">
+        <input class="form-control" id="valorunitario" type="text" required formControlName="valorunitario"  [ngModel]="minimumRange | number : '1-2.2'" min="1" (ngModelChange)="minimumRange=$event" placeholder="0.00" type="number"/>
+        <span class="help-block" *ngIf="(formGroup.get('valorunitario').touched || formGroup.get('valorunitario').dirty) && formGroup.get('valorunitario').errors">
+          <span *ngIf="formGroup.get('valorunitario').errors.required">O campo valor unitário é obrigatório</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-md-4 col-md-offset-2">
+        <span>
+          <button class="btn btn-primary" type="submit" [disabled]="!formGroup.valid">Salvar</button>
+          <button class="btn btn-danger" [routerLink]='["/produto"]'>Cancelar</button>
+        </span>
+      </div>
+    </div>
+
+  </fieldset>
+</form>

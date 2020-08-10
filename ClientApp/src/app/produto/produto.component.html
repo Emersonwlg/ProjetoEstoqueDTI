@@ -1,0 +1,29 @@
+<h3>Produtos</h3>
+
+<button [routerLink]='["/produto-incluir"]' class="btn btn-primary">Novo Produto</button>
+
+<p *ngIf="!(produtos && produtos.length)">
+    Não existem produto(s) para exibir.
+</p>
+
+<table class="table" *ngIf="(produtos && produtos.length)">
+    <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Quantidade</th>
+          <th>Valor Unitário</th>
+          <th>Comando</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let produto of produtos">
+              <td>{{produto.nome}}</td>
+              <td>{{produto.quantidade}}</td>
+              <td>{{produto.valorunitario}}</td>
+              <td>
+                <button class="btn btn-success" [routerLink]='["/produto-editar/" + produto.id]' >Editar</button>
+                <button class="btn btn-danger" (click)="delete(produto)">Excluir</button>
+              </td>
+            </tr>
+      </tbody>
+</table>
