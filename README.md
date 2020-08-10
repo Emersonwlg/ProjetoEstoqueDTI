@@ -7,7 +7,7 @@ Script de criação da tabela "Produto" se encontra na pasta => ScriptBanco
 
 Documento de decisões se encontra na pasta => Documentos
 
-# O que foi desenvolvido
+# O que foi desenvolvido:
 
 Projeto ASP .NET Core integrado com Angular, onde foi criado uma Web API consumida pelo Angular.
 
