@@ -24,7 +24,7 @@ namespace ProjetoEstoqueDTI.Data
         {
              return _context.Produtos;
         }
-
+ 
         public async Task<bool> PutProduto(Produto produto)
         {
             _context.Entry(produto).State = EntityState.Modified;            
