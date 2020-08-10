@@ -1,5 +1,5 @@
 # ProjetoEstoqueDTI
-Projeto controle de estoque
+Projeto para controle de estoque.
 
 # IMPORTANTE
 
