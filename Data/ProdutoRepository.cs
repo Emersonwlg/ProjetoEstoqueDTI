@@ -14,6 +14,7 @@ namespace ProjetoEstoqueDTI.Data
         {
             _context = context;
         }
+        
         public Produto GetProdutoById(int id)
         {
            return _context.Produtos.Where(x=>x.Id == id).FirstOrDefault();
