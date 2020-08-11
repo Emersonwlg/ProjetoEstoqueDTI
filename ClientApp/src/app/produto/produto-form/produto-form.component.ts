@@ -22,8 +22,8 @@ export class ProdutoFormComponent implements OnInit {
      this.formGroup = this.fb.group ({
        nome : '',
        quantidade: '',
-       valorunitario: ''
-     });
+       valor: ''
+     }); 
  
     this.activatedRoute.params.subscribe(params=> {
         if(params["id"] == undefined ) {
@@ -43,7 +43,7 @@ export class ProdutoFormComponent implements OnInit {
       this.formGroup.patchValue({
         nome : produto.nome,
         quantidade: produto.quantidade,
-        valorunitario: produto.valorunitario
+        valor: produto.valor
       });
   }
 

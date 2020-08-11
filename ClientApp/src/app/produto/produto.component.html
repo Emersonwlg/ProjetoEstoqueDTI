@@ -19,7 +19,7 @@
           <tr *ngFor="let produto of produtos">
               <td>{{produto.nome}}</td>
               <td>{{produto.quantidade}}</td>
-              <td>{{produto.valorunitario}}</td>
+              <td>{{produto.valor}}</td>
               <td>
                 <button class="btn btn-success" [routerLink]='["/produto-editar/" + produto.id]' >Editar</button>
                 <button class="btn btn-danger" (click)="delete(produto)">Excluir</button>

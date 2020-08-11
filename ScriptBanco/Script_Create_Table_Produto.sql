@@ -12,7 +12,7 @@ CREATE TABLE [dbo].[Produtos](
 [Id] [int] IDENTITY(1,1) NOT NULL,
 [Nome] [varchar](100) NULL,
 [Quantidade] [int] NULL,
-[ValorUnitario] [decimal](18, 2) NULL,
+[Valor] [decimal](18, 2) NULL,
  CONSTRAINT [PK_Produtos] PRIMARY KEY CLUSTERED
 (
 [Id] ASC
