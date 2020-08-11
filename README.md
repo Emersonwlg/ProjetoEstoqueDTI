@@ -3,7 +3,7 @@ Projeto para controle de estoque.
 
 # IMPORTANTE
 
-•	É necessário alterar a ConnectionStrings no arquivo "appsetting.json" apontando para base a ser criado.
+•	É necessário alterar a ConnectionString no arquivo "appsetting.json", apontando para base de dados a ser criada.
 
 •	Script de criação da tabela "Produto" se encontra na pasta => ScriptBanco
 
