@@ -3,9 +3,11 @@ Projeto para controle de estoque.
 
 # IMPORTANTE
 
-Script de criação da tabela "Produto" se encontra na pasta => ScriptBanco
+•	É necessário alterar a ConnectionStrings no arquivo "appsetting.json" apontando para base a ser criado.
 
-Documento de decisões se encontra na pasta => Documentos
+•	Script de criação da tabela "Produto" se encontra na pasta => ScriptBanco
+
+•	Documento de decisões se encontra na pasta => Documentos
 
 # O que foi desenvolvido:
 
