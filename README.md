@@ -9,11 +9,11 @@ Projeto para controle de estoque.
 
 •	É necessário alterar a ConnectionString no arquivo "appsetting.json", apontando para base de dados a ser criada.
 
-# O que foi desenvolvido:
+# O que foi desenvolvido
 
 Projeto ASP .NET Core integrado com Angular, onde foi criado uma Web API consumida pelo Angular.
 
-# Recursos utilizados no desenvolvimento do projeto:
+# Recursos utilizados no desenvolvimento do projeto
 
   •	Asp. Net Core 2.0
 
