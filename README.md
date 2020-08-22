@@ -1,4 +1,4 @@
-# ProjetoEstoqueDTI
+# Projeto Estoque
 Projeto para controle de estoque.
 
 # IMPORTANTE
